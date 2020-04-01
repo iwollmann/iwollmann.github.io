@@ -1,22 +1,163 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
-h1 {
-    width: 100%;
-    height: 500px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            max-height: 100vh;
+            position: relative;
+            background: #E5E5E5;
+        }
+
+        @media only screen and (min-width: 850px) {
+            .sidebar {
+                display: flex;
+                width: 25vw;
+                height: 50vw;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                text-align: center;
+                position: fixed;
+                top: 0;
+                left: 0;
+                padding: 5vh 3vw;
+                max-width: 120px;
+
+                background: #C3C3C7;
+                border-radius: 234px;
+            }
+
+            section.header p {
+                margin: 0;
+            }
+
+            section.header p i {
+                padding-right: 0.2em;
+            }
+
+            div.profile {
+                padding-left: 5px;
+            }
+
+            .sidebar-content {
+                left:0;
+            }
+
+            ul.sidenav {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            ul.sidenav li {
+                padding: 0px;
+            }
+
+            ul.sidenav li a {
+                display: block;
+                color: #000;
+                padding: 8px 16px;
+                text-decoration: none;
+            }
+
+            ul.sidenav li a.active {
+                background-color: #7b7b7b;
+                font-weight: bold;
+            }
+
+            ul.sidenav li a:hover:not(.active) {
+                background-color: #555;
+                color: white;
+            }
+
+            .resume-container {
+                align-items: center;
+                margin: 0 0 0 15vw;
+                display: flex;
+                flex-direction: column;
+                width: 75vw;
+                justify-content: center;
+            }
+
+            .resume-section {
+                width: 95%;
+                padding-top: 2vh;
+                min-height: 70vh;
+                margin-top: 1vh;
+                margin-left: 2vw;
+                scroll-snap-align: start;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: space-between;
+            }
+        }
+    </style>
 </head>
+
 <body>
-
-<h1>Under Construction.</h1>
-
+    <section class="sidebar">
+        <section class="sidebar-content">
+            <section class="header">
+                <div class="profile">
+                    <svg width="156" height="157" viewBox="0 0 156 157" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g filter="url(#filter0_d)">
+                            <path
+                                d="M147.013 71.9292C147.013 96.3686 141.309 120.124 101.382 138.53C-17.3126 182.025 1.02124 77.4927 1.02124 53.0533C1.02124 28.6139 34.695 4.43849 85.9001 0.446143C160.729 -5.38811 147.013 47.4898 147.013 71.9292Z"
+                                fill="url(#pattern0)" />
+                        </g>
+                        <defs>
+                            <filter id="filter0_d" x="0" y="0" width="156" height="157" filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                <feOffset dx="4" dy="4" />
+                                <feGaussianBlur stdDeviation="2" />
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.7 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                            </filter>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0" transform="translate(0 -0.162192) scale(0.00104167)" />
+                            </pattern>
+                            <image id="image0" width="960" height="1280" xlink:href="/img/profile.jpeg"/>
+                        </defs>
+                    </svg>
+                </div>
+                <h1>Iuri Wollmann</h1>
+                <p>Full stack software developer</p>
+                <p>
+                    <i class="fa fa-map-marker"></i>Brazil - RJ
+                </p>
+                <p>iurimw@outlook.com</p>
+            </section>
+            <ul class="sidenav">
+                <li><a class="active" href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+            </ul>
+        </section>
+    </section>
+    <div class="resume-container">
+        <section class="resume-section" id="about">
+            <h1>IURI MATARAZZO WOLLMANN</h1>
+            <p>I'm a professional with more than 10 years of experience in Web development and a lot of baggage. I've participated in projects that required a lot integration of services, high availability and fault tolerance.
+                Almost all my experience was with the .Net platform, but I have already had to deal with several other technologies. Currently I'm working with Ruby and a lot of JavaScript for Node.js and React.
+                
+                I try to keep myself up to date staying connected in the pluralsight's courses, following the right twitter accounts, listening technology podcasts and reading some blogs, articles and books.
+                
+                "If I have seen further, it is by standing on the shoulders of giants." </p>
+        </section>
+        <section class="resume-section" id="experience">EXPERIENCE</section>
+        <section class="resume-section" id="education">EDUCATION</section>
+        <section class="resume-section" id="certifications">CERTIFICATIONS</section>
+    </div>
 </body>
 </html>
-
-
