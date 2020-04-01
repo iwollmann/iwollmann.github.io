@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <style>
         html {
             scroll-behavior: smooth;
@@ -12,6 +13,7 @@
             max-height: 100vh;
             position: relative;
             background: #E5E5E5;
+            font-family: 'Raleway', sans-serif;
         }
 
         @media only screen and (min-width: 850px) {
@@ -28,9 +30,10 @@
                 left: 0;
                 padding: 5vh 3vw;
                 max-width: 120px;
+                border-right: 1px dashed #ffffff;
 
                 background: #C3C3C7;
-                border-radius: 234px;
+                /* border-radius: 234px; */
             }
 
             section.header p {
@@ -63,15 +66,15 @@
                 color: #000;
                 padding: 8px 16px;
                 text-decoration: none;
+                transition: filter 0.3s;
             }
 
             ul.sidenav li a.active {
-                background-color: #7b7b7b;
                 font-weight: bold;
             }
 
             ul.sidenav li a:hover:not(.active) {
-                background-color: #555;
+                filter: brightness(90%);
                 color: white;
             }
 
@@ -93,10 +96,55 @@
                 scroll-snap-align: start;
                 display: flex;
                 flex-direction: column;
-                text-align: center;
                 justify-content: space-between;
+                border-bottom: 2px solid #ffffff;
+            }
+
+            section.about-section{
+                margin-top: 20vh;
             }
         }
+
+        section.actions {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .about-section a {
+            display: block;
+            width: 35px;
+            height: 35px;
+            background-size: 30px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin: 5px;
+            transition: opacity 0.4s;
+        }
+
+        .about-section a:hover {
+            opacity: 0.6;
+            /* background-color: #d3d3d3; */
+        }
+
+
+        a.twitter {
+            background-image: url("/img/twitter.svg");
+        }
+
+        a.linkedin {
+            background-image: url("/img/linkedin.svg");
+        }
+
+        a.github {
+            background-image: url("/img/github.svg");
+        }
+
+        a.pdf-file {
+            background-image: url("/img/pdf-file.svg");
+        }
+
+
     </style>
 </head>
 
@@ -138,7 +186,7 @@
                 <p>iurimw@outlook.com</p>
             </section>
             <ul class="sidenav">
-                <li><a class="active" href="#about">About</a></li>
+                <li><a class="active" href="#">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#certifications">Certifications</a></li>
@@ -147,13 +195,16 @@
     </section>
     <div class="resume-container">
         <section class="resume-section" id="about">
-            <h1>IURI MATARAZZO WOLLMANN</h1>
-            <p>I'm a professional with more than 10 years of experience in Web development and a lot of baggage. I've participated in projects that required a lot integration of services, high availability and fault tolerance.
-                Almost all my experience was with the .Net platform, but I have already had to deal with several other technologies. Currently I'm working with Ruby and a lot of JavaScript for Node.js and React.
-                
-                I try to keep myself up to date staying connected in the pluralsight's courses, following the right twitter accounts, listening technology podcasts and reading some blogs, articles and books.
-                
-                "If I have seen further, it is by standing on the shoulders of giants." </p>
+            <section class="about-section">
+                <h1>IURI <span>MATARAZZO</span> WOLLMANN</h1>
+                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <section class="actions">
+                    <a href="https://twitter.com/iurimw" class="twitter"></a>
+                    <a href="https://www.linkedin.com/in/iuri-wollmann" class="linkedin"></a>
+                    <a href="https://github.com/iwollmann" class="github"></a>
+                    <a href="#" class="pdf-file"></a>
+                </section>
+            </section>
         </section>
         <section class="resume-section" id="experience">EXPERIENCE</section>
         <section class="resume-section" id="education">EDUCATION</section>
