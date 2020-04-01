@@ -16,11 +16,11 @@
             font-family: 'Raleway', sans-serif;
         }
 
-        @media only screen and (min-width: 850px) {
+        @media only screen and (min-width: 1000px) {
             .sidebar {
                 display: flex;
                 width: 25vw;
-                height: 50vw;
+                height: 100vh;
                 flex-direction: column;
                 justify-content: space-around;
                 align-items: center;
@@ -144,6 +144,27 @@
             background-image: url("/img/pdf-file.svg");
         }
 
+        .resume-section ul{
+            list-style: none;
+            margin: 3vw 0;
+        }
+
+        .resume-section ul li img {
+            width: 40px;
+        }
+
+        .exp-item-header {
+            display: flex;
+        }
+        
+        .exp-item-header h1 {
+            padding-left: 10px;
+        }
+
+        .exp-item-header p {
+            padding-left: 30vw;
+        }
+
 
     </style>
 </head>
@@ -179,7 +200,7 @@
                     </svg>
                 </div>
                 <h1>Iuri Wollmann</h1>
-                <p>Full stack software developer</p>
+                <p>FullStack Software Developer</p>
                 <p>
                     <i class="fa fa-map-marker"></i>Brazil - RJ
                 </p>
@@ -206,7 +227,41 @@
                 </section>
             </section>
         </section>
-        <section class="resume-section" id="experience">EXPERIENCE</section>
+        <section class="resume-section" id="experience">
+            <h1>Experience</h1>
+            <ul>
+                <li>
+                    <div class="exp-item-header">
+                        <img src="/img/company-logo-sample.svg" />
+                        <h1>Title</h1>
+                        <h2>Company Name</h2>
+                        <p>Date</p>
+                    </div>
+                    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                    <p></p>
+                </li>
+                <li>
+                    <div class="exp-item-header">
+                        <img src="/img/company-logo-sample.svg" />
+                        <h1>Title 2</h1>
+                        <h2>Company Name 2</h2>
+                        <p>Date</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non tellus pretium, tristique ex a, tincidunt ipsum. Etiam interdum lectus placerat malesuada aliquam. Quisque non nunc a dolor ultrices elementum. Nullam tempor lectus fermentum nisi rutrum, id lobortis sem lobortis. Nulla rhoncus, mi sed tristique facilisis, mi nulla convallis nisi, et malesuada justo justo vel tellus. Sed bibendum est eget eros venenatis, eu fringilla leo condimentum. Mauris vel turpis non diam pellentesque efficitur. Morbi pulvinar at urna at fermentum. Nulla facilisis, nisi eget eleifend lobortis, mauris diam lobortis dui, in semper nibh ante sed enim. Curabitur lacus risus, tempor at tincidunt vitae, tempor eu orci. Donec efficitur faucibus dapibus.</p>
+                    <p></p>
+                </li>
+                <li>
+                    <div class="exp-item-header">
+                        <img src="/img/company-logo-sample.svg" />
+                        <h1>Title 3</h1>
+                        <h2>Company Name 4</h2>
+                        <p>Date</p>
+                    </div>
+                    <p>In ornare, lorem at luctus porta, nibh odio fringilla libero, id sodales lacus nisl ac ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lorem metus, luctus a aliquet semper, fringilla id leo. Vestibulum posuere lorem et sapien imperdiet, et faucibus justo ullamcorper. Aenean lectus orci, molestie nec condimentum in, aliquet id risus. Pellentesque dapibus commodo justo. Nam vel elit ullamcorper, pretium turpis at, posuere enim. Sed feugiat, lectus eget volutpat cursus, purus ante auctor diam, nec bibendum magna enim sed urna. In commodo porttitor purus in consequat. Vivamus id eleifend purus, a ullamcorper ex. Phasellus et dolor ante. Morbi sit amet neque congue, lobortis odio ullamcorper, mattis lorem. In hac habitasse platea dictumst. Etiam nec quam risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed ligula arcu, vehicula a orci eu, tempor interdum arcu.</p>
+                    <p></p>
+                </li>
+            </ul>
+        </section>
         <section class="resume-section" id="education">EDUCATION</section>
         <section class="resume-section" id="certifications">CERTIFICATIONS</section>
     </div>
