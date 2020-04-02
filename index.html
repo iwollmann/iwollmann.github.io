@@ -307,4 +307,12 @@
         </section>
     </div>
 </body>
+<script>
+    var buttons = document.querySelectorAll("ul.sidenav>li>a");
+    [...buttons].map(x=> x.addEventListener('click', 
+        (e) => {
+            [...e.toElement.parentElement.parentElement.querySelectorAll('a')].map(c=> c.classList.remove('active'));
+            e.toElement.classList.add('active');
+        }));
+</script>
 </html>
