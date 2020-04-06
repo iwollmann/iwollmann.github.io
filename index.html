@@ -4,173 +4,7 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            max-height: 100vh;
-            position: relative;
-            background: #E5E5E5;
-            font-family: 'Raleway', sans-serif;
-        }
-
-        @media only screen and (min-width: 1000px) {
-            .sidebar {
-                display: flex;
-                width: 25vw;
-                height: 100vh;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: center;
-                text-align: center;
-                position: fixed;
-                top: 0;
-                left: 0;
-                padding: 5vh 3vw;
-                max-width: 120px;
-                border-right: 1px dashed #ffffff;
-
-                background: #C3C3C7;
-                /* border-radius: 234px; */
-            }
-
-            section.header p {
-                margin: 0;
-            }
-
-            section.header p i {
-                padding-right: 0.2em;
-            }
-
-            div.profile {
-                padding-left: 5px;
-            }
-
-            .sidebar-content {
-                left:0;
-            }
-
-            ul.sidenav {
-                list-style-type: none;
-                padding: 0;
-            }
-
-            ul.sidenav li {
-                padding: 0px;
-            }
-
-            ul.sidenav li a {
-                display: block;
-                color: #000;
-                padding: 8px 16px;
-                text-decoration: none;
-                transition: filter 0.3s;
-            }
-
-            ul.sidenav li a.active {
-                font-weight: bold;
-            }
-
-            ul.sidenav li a:hover:not(.active) {
-                filter: brightness(90%);
-                color: white;
-            }
-
-            .resume-container {
-                align-items: center;
-                margin: 0 0 0 15vw;
-                display: flex;
-                flex-direction: column;
-                width: 75vw;
-                justify-content: center;
-            }
-
-            .resume-section {
-                width: 95%;
-                padding-top: 2vh;
-                min-height: 70vh;
-                margin-top: 1vh;
-                margin-left: 2vw;
-                scroll-snap-align: start;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                border-bottom: 2px solid #ffffff;
-            }
-
-            section.about-section{
-                margin-top: 20vh;
-            }
-        }
-
-        section.actions {
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-        }
-
-        .about-section a {
-            display: block;
-            width: 35px;
-            height: 35px;
-            background-size: 30px;
-            background-repeat: no-repeat;
-            background-position: center center;
-            margin: 5px;
-            transition: opacity 0.4s;
-        }
-
-        .about-section a:hover {
-            opacity: 0.6;
-            /* background-color: #d3d3d3; */
-        }
-
-
-        a.twitter {
-            background-image: url("/img/twitter.svg");
-        }
-
-        a.linkedin {
-            background-image: url("/img/linkedin.svg");
-        }
-
-        a.github {
-            background-image: url("/img/github.svg");
-        }
-
-        a.pdf-file {
-            background-image: url("/img/pdf-file.svg");
-        }
-
-        #education.resume-section  {
-            min-height: 30vh;
-        }
-
-        .resume-section ul{
-            list-style: none;
-            margin: 3vw 0;
-        }
-
-        .resume-section ul li img {
-            width: 40px;
-        }
-
-        .exp-item-header {
-            display: flex;
-        }
-        
-        .exp-item-header h1 {
-            padding-left: 10px;
-        }
-
-        .exp-item-header p {
-            padding-left: 30vw;
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -222,12 +56,14 @@
         <section class="resume-section" id="about">
             <section class="about-section">
                 <h1>IURI <span>MATARAZZO</span> WOLLMANN</h1>
-                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>Passionate software developer, reliable and responsible. trying to be better every day.</p>
+                <p>"If I have seen further it is by standing on the shoulders of Giants."</p>
                 <section class="actions">
                     <a href="https://twitter.com/iurimw" class="twitter"></a>
                     <a href="https://www.linkedin.com/in/iuri-wollmann" class="linkedin"></a>
                     <a href="https://github.com/iwollmann" class="github"></a>
-                    <a href="#" class="pdf-file"></a>
+                    <a href="/docs/Iuri Matarazzo Wollmann(EN).docx" class="pdf-file" title="English"></a>
+                    <a href="/docs/Iuri Matarazzo Wollmann(PT).docx" class="pdf-file" title="Português"></a>
                 </section>
             </section>
         </section>
@@ -236,33 +72,50 @@
             <ul>
                 <li>
                     <div class="exp-item-header">
-                        <img src="/img/company-logo-sample.svg" />
-                        <h1>Title</h1>
-                        <h2>Company Name</h2>
-                        <p>Date</p>
+                        <img src="/img/sai-global-logo-vector.svg" />
+                        <h1>Software Consultant</h1>
+                        <p>Febuary 2017 - Present</p>
                     </div>
+                    <p><span>SAI Global</span></p>
                     <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-                    <p></p>
                 </li>
                 <li>
                     <div class="exp-item-header">
-                        <img src="/img/company-logo-sample.svg" />
-                        <h1>Title 2</h1>
-                        <h2>Company Name 2</h2>
-                        <p>Date</p>
+                        <img src="/img/concrete_solutions_logo.png" />
+                        <h1>Senior Software Developer</h1>
+                        <p>July 2016 - Febuary 2017</p>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non tellus pretium, tristique ex a, tincidunt ipsum. Etiam interdum lectus placerat malesuada aliquam. Quisque non nunc a dolor ultrices elementum. Nullam tempor lectus fermentum nisi rutrum, id lobortis sem lobortis. Nulla rhoncus, mi sed tristique facilisis, mi nulla convallis nisi, et malesuada justo justo vel tellus. Sed bibendum est eget eros venenatis, eu fringilla leo condimentum. Mauris vel turpis non diam pellentesque efficitur. Morbi pulvinar at urna at fermentum. Nulla facilisis, nisi eget eleifend lobortis, mauris diam lobortis dui, in semper nibh ante sed enim. Curabitur lacus risus, tempor at tincidunt vitae, tempor eu orci. Donec efficitur faucibus dapibus.</p>
-                    <p></p>
+                    <p><span>Concrete Solutions</span></p>
+                    <p>Worked on automated tests using ruby stack.</p>
+                    <p>Helps in the development of SPA applications using react and nodejs.</p>
                 </li>
                 <li>
                     <div class="exp-item-header">
-                        <img src="/img/company-logo-sample.svg" />
-                        <h1>Title 3</h1>
-                        <h2>Company Name 4</h2>
-                        <p>Date</p>
+                        <img src="/img/modulo_logo.png" />
+                        <h1>Software Developer</h1>
+                        <p>April 2012 - June 2016</p>
                     </div>
-                    <p>In ornare, lorem at luctus porta, nibh odio fringilla libero, id sodales lacus nisl ac ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lorem metus, luctus a aliquet semper, fringilla id leo. Vestibulum posuere lorem et sapien imperdiet, et faucibus justo ullamcorper. Aenean lectus orci, molestie nec condimentum in, aliquet id risus. Pellentesque dapibus commodo justo. Nam vel elit ullamcorper, pretium turpis at, posuere enim. Sed feugiat, lectus eget volutpat cursus, purus ante auctor diam, nec bibendum magna enim sed urna. In commodo porttitor purus in consequat. Vivamus id eleifend purus, a ullamcorper ex. Phasellus et dolor ante. Morbi sit amet neque congue, lobortis odio ullamcorper, mattis lorem. In hac habitasse platea dictumst. Etiam nec quam risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed ligula arcu, vehicula a orci eu, tempor interdum arcu.</p>
-                    <p></p>
+                    <p><span>Modulo Solutions for GRC</span></p>
+                    <p>Worked developing and maintaining the company's main product, integrating them with other systems and other projects.</p>
+                </li>
+                <li>
+                    <div class="exp-item-header">
+                        <img src="/img/logo_ibrowse.png" />
+                        <h1>IT Consultant</h1>
+                        <p>October 2011 - April 2012</p>
+                    </div>
+                    <p><span>Ibrowse</span></p>
+                    <p>Maintain and develop new features for PNAD-C, IBGE`s system responsible for collect and summarize characteristics and socioeconomics data about the population.</p>
+                </li>
+                <li>
+                    <div class="exp-item-header">
+                        <img src="/img/modulo_logo.png" />
+                        <h1>Software Developer</h1>
+                        <p>November 2006 - September 2011</p>
+                    </div>
+                    <p><span>Modulo Solutions for GRC</span></p>
+                    <p>Started my career on Modulo Security as a intern developing and maintaining the softwares used internally.</p>
+                    <p>On that period I had the opportunity to work with several programming languages (JSP, Vb.Net, classic ASP, PHP and C#) and several databases (MySql, SQL Server and Oracle).</p>
                 </li>
             </ul>
         </section>
@@ -271,12 +124,12 @@
             <ul>
                 <li>
                     <div class="exp-item-header">
-                        <img src="/img/company-logo-sample.svg" />
-                        <h1>Title</h1>
-                        <h2>Company Name</h2>
-                        <p>Date</p>
+                        <img src="/img/estacio_logo.png" />
+                        <h1>Bachelor of System Analysis</h1>
+                        <p>2004 - 2008</p>
                     </div>
-                    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                    <p><span>Estácio de Sá University</span></p>
+                    <p>Estácio de Sá University is a private university in Rio de Janeiro, Brazil.</p>
                 </li>
             </ul>
         </section>
@@ -285,23 +138,23 @@
             <ul>
                 <li>
                     <div class="exp-item-header">
-                        <img src="/img/company-logo-sample.svg" />
-                        <h1>Title</h1>
-                        <h2>Company Name</h2>
-                        <p>Date</p>
+                        <img src="/img/coursera-logo.svg" />
+                        <h1>Divide and Conquer, Sorting and Searching, and Randomized Algorithms</h1>
+                        <p>May 2017</p>
                     </div>
-                    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-                    <a href="">See Credential</a>
+                    <p><span>Coursera</span></p>
+                    <p><span>Credential ID G2QV6XU7SHLC</span></p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/G2QV6XU7SHLC">See Credential</a>
                 </li>
                 <li>
                     <div class="exp-item-header">
-                        <img src="/img/company-logo-sample.svg" />
-                        <h1>Title</h1>
-                        <h2>Company Name</h2>
-                        <p>Date</p>
+                        <img src="/img/coursera-logo.svg" />
+                        <h1>Machine Learning</h1>
+                        <p>April 2017</p>
                     </div>
-                    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-                    <a href="">See Credential</a>
+                    <p><span>Cousera</span></p>
+                    <p><span>Credential ID TG986V9F6STC</span></p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/TG986V9F6STC">See Credential</a>
                 </li>
             </ul>
         </section>
