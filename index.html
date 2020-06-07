@@ -1,173 +1,290 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-168760313-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
+      gtag("config", "UA-168760313-1");
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
 
-<body>
+  <body>
     <section class="sidebar">
-        <section class="sidebar-content">
-            <section class="header">
-                <div class="profile">
-                    <svg width="156" height="157" viewBox="0 0 156 157" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g filter="url(#filter0_d)">
-                            <path
-                                d="M147.013 71.9292C147.013 96.3686 141.309 120.124 101.382 138.53C-17.3126 182.025 1.02124 77.4927 1.02124 53.0533C1.02124 28.6139 34.695 4.43849 85.9001 0.446143C160.729 -5.38811 147.013 47.4898 147.013 71.9292Z"
-                                fill="url(#pattern0)" />
-                        </g>
-                        <defs>
-                            <filter id="filter0_d" x="0" y="0" width="156" height="157" filterUnits="userSpaceOnUse"
-                                color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                                <feOffset dx="4" dy="4" />
-                                <feGaussianBlur stdDeviation="2" />
-                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.7 0" />
-                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-                            </filter>
-                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                <use xlink:href="#image0" transform="translate(0 -0.162192) scale(0.00104167)" />
-                            </pattern>
-                            <image id="image0" width="960" height="1280" xlink:href="/img/profile.jpeg"/>
-                        </defs>
-                    </svg>
-                </div>
-                <h1>Iuri Wollmann</h1>
-                <p>FullStack Software Developer</p>
-                <p>
-                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>Brazil - RJ
-                </p>
-                <p>iurimw@outlook.com</p>
-            </section>
-            <ul class="sidenav">
-                <li><a class="active" href="#">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-            </ul>
+      <section class="sidebar-content">
+        <section class="header">
+          <div class="profile">
+            <svg
+              width="156"
+              height="157"
+              viewBox="0 0 156 157"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <g filter="url(#filter0_d)">
+                <path
+                  d="M147.013 71.9292C147.013 96.3686 141.309 120.124 101.382 138.53C-17.3126 182.025 1.02124 77.4927 1.02124 53.0533C1.02124 28.6139 34.695 4.43849 85.9001 0.446143C160.729 -5.38811 147.013 47.4898 147.013 71.9292Z"
+                  fill="url(#pattern0)"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_d"
+                  x="0"
+                  y="0"
+                  width="156"
+                  height="157"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  />
+                  <feOffset dx="4" dy="4" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.7 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow"
+                    result="shape"
+                  />
+                </filter>
+                <pattern
+                  id="pattern0"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    xlink:href="#image0"
+                    transform="translate(0 -0.162192) scale(0.00104167)"
+                  />
+                </pattern>
+                <image
+                  id="image0"
+                  width="960"
+                  height="1280"
+                  xlink:href="/img/profile.jpeg"
+                />
+              </defs>
+            </svg>
+          </div>
+          <h1>Iuri Wollmann</h1>
+          <p>FullStack Software Developer</p>
+          <p>
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>Brazil - RJ
+          </p>
+          <p>iurimw@outlook.com</p>
         </section>
+        <ul class="sidenav">
+          <li><a class="active" href="#">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+        </ul>
+      </section>
     </section>
     <div class="resume-container">
-        <section class="resume-section" id="about">
-            <section class="about-section">
-                <h1>IURI <span>MATARAZZO</span> WOLLMANN</h1>
-                <p>Passionate software developer, reliable and responsible. trying to be better every day.</p>
-                <p>"If I have seen further it is by standing on the shoulders of Giants."</p>
-                <section class="actions">
-                    <a href="https://twitter.com/iurimw" class="twitter"></a>
-                    <a href="https://www.linkedin.com/in/iuri-wollmann" class="linkedin"></a>
-                    <a href="https://github.com/iwollmann" class="github"></a>
-                    <a href="/docs/Iuri Matarazzo Wollmann(EN).docx" class="pdf-file" title="English"></a>
-                    <a href="/docs/Iuri Matarazzo Wollmann(PT).docx" class="pdf-file" title="Português"></a>
-                </section>
-            </section>
+      <section class="resume-section" id="about">
+        <section class="about-section">
+          <h1>IURI <span>MATARAZZO</span> WOLLMANN</h1>
+          <p>
+            Passionate software developer, reliable and responsible. trying to
+            be better every day.
+          </p>
+          <p>
+            "If I have seen further it is by standing on the shoulders of
+            Giants."
+          </p>
+          <section class="actions">
+            <a href="https://twitter.com/iurimw" class="twitter"></a>
+            <a
+              href="https://www.linkedin.com/in/iuri-wollmann"
+              class="linkedin"
+            ></a>
+            <a href="https://github.com/iwollmann" class="github"></a>
+            <a
+              href="/docs/Iuri Matarazzo Wollmann(EN).docx"
+              class="pdf-file"
+              title="English"
+            ></a>
+            <a
+              href="/docs/Iuri Matarazzo Wollmann(PT).docx"
+              class="pdf-file"
+              title="Português"
+            ></a>
+          </section>
         </section>
-        <section class="resume-section" id="experience">
-            <h1>Experience</h1>
-            <ul>
-                <li>
-                    <div class="exp-item-header">
-                        <img src="/img/sai-global-logo-vector.svg" />
-                        <h1>Software Consultant</h1>
-                        <p>Febuary 2017 - Present</p>
-                    </div>
-                    <p><span>SAI Global</span></p>
-                    <p>Worked on development of an authentication portal using Identity Server 4</p>
-                    <p>and on development of an integrated application using embedded Power BI reports.</p>
-                    <p>Development of other modules using React and .Net Core</p>
-                </li>
-                <li>
-                    <div class="exp-item-header">
-                        <img src="/img/concrete_solutions_logo.png" />
-                        <h1>Senior Software Developer</h1>
-                        <p>July 2016 - Febuary 2017</p>
-                    </div>
-                    <p><span>Concrete Solutions</span></p>
-                    <p>Worked on automated tests using ruby stack.</p>
-                    <p>Helps in the development of SPA applications using react and nodejs.</p>
-                </li>
-                <li>
-                    <div class="exp-item-header">
-                        <img src="/img/modulo_logo.png" />
-                        <h1>Software Developer</h1>
-                        <p>April 2012 - June 2016</p>
-                    </div>
-                    <p><span>Modulo Solutions for GRC</span></p>
-                    <p>Worked developing and maintaining the company's main product, integrating them with other systems and other projects.</p>
-                </li>
-                <li>
-                    <div class="exp-item-header">
-                        <img src="/img/logo_ibrowse.png" />
-                        <h1>IT Consultant</h1>
-                        <p>October 2011 - April 2012</p>
-                    </div>
-                    <p><span>Ibrowse</span></p>
-                    <p>Maintain and develop new features for PNAD-C, IBGE`s system responsible for collect and summarize characteristics and socioeconomics data about the population.</p>
-                </li>
-                <li>
-                    <div class="exp-item-header">
-                        <img src="/img/modulo_logo.png" />
-                        <h1>Software Developer</h1>
-                        <p>November 2006 - September 2011</p>
-                    </div>
-                    <p><span>Modulo Solutions for GRC</span></p>
-                    <p>Started my career on Modulo Security as a intern developing and maintaining the softwares used internally.</p>
-                    <p>On that period I had the opportunity to work with several programming languages (JSP, Vb.Net, classic ASP, PHP and C#) and several databases (MySql, SQL Server and Oracle).</p>
-                </li>
-            </ul>
-        </section>
-        <section class="resume-section" id="education">
-            <h1>Education</h1>
-            <ul>
-                <li>
-                    <div class="exp-item-header">
-                        <img src="/img/estacio_logo.png" />
-                        <h1>Bachelor of System Analysis</h1>
-                        <p>2004 - 2008</p>
-                    </div>
-                    <p><span>Estácio de Sá University</span></p>
-                    <p>Estácio de Sá University is a private university in Rio de Janeiro, Brazil.</p>
-                </li>
-            </ul>
-        </section>
-        <section class="resume-section" id="certifications">
-            <h1>Certifications</h1>
-            <ul>
-                <li>
-                    <div class="exp-item-header">
-                        <img src="/img/coursera-logo.svg" />
-                        <h1>Divide and Conquer, Sorting and Searching, and Randomized Algorithms</h1>
-                        <p>May 2017</p>
-                    </div>
-                    <p><span>Coursera</span></p>
-                    <p><span>Credential ID G2QV6XU7SHLC</span></p>
-                    <a href="https://www.coursera.org/account/accomplishments/verify/G2QV6XU7SHLC">See Credential</a>
-                </li>
-                <li>
-                    <div class="exp-item-header">
-                        <img src="/img/coursera-logo.svg" />
-                        <h1>Machine Learning</h1>
-                        <p>April 2017</p>
-                    </div>
-                    <p><span>Cousera</span></p>
-                    <p><span>Credential ID TG986V9F6STC</span></p>
-                    <a href="https://www.coursera.org/account/accomplishments/verify/TG986V9F6STC">See Credential</a>
-                </li>
-            </ul>
-        </section>
+      </section>
+      <section class="resume-section" id="experience">
+        <h1>Experience</h1>
+        <ul>
+          <li>
+            <div class="exp-item-header">
+              <img src="/img/sai-global-logo-vector.svg" />
+              <h1>Software Consultant</h1>
+              <p>Febuary 2017 - Present</p>
+            </div>
+            <p><span>SAI Global</span></p>
+            <p>
+              Worked on development of an authentication portal using Identity
+              Server 4
+            </p>
+            <p>
+              and on development of an integrated application using embedded
+              Power BI reports.
+            </p>
+            <p>Development of other modules using React and .Net Core</p>
+          </li>
+          <li>
+            <div class="exp-item-header">
+              <img src="/img/concrete_solutions_logo.png" />
+              <h1>Senior Software Developer</h1>
+              <p>July 2016 - Febuary 2017</p>
+            </div>
+            <p><span>Concrete Solutions</span></p>
+            <p>Worked on automated tests using ruby stack.</p>
+            <p>
+              Helps in the development of SPA applications using react and
+              nodejs.
+            </p>
+          </li>
+          <li>
+            <div class="exp-item-header">
+              <img src="/img/modulo_logo.png" />
+              <h1>Software Developer</h1>
+              <p>April 2012 - June 2016</p>
+            </div>
+            <p><span>Modulo Solutions for GRC</span></p>
+            <p>
+              Worked developing and maintaining the company's main product,
+              integrating them with other systems and other projects.
+            </p>
+          </li>
+          <li>
+            <div class="exp-item-header">
+              <img src="/img/logo_ibrowse.png" />
+              <h1>IT Consultant</h1>
+              <p>October 2011 - April 2012</p>
+            </div>
+            <p><span>Ibrowse</span></p>
+            <p>
+              Maintain and develop new features for PNAD-C, IBGE`s system
+              responsible for collect and summarize characteristics and
+              socioeconomics data about the population.
+            </p>
+          </li>
+          <li>
+            <div class="exp-item-header">
+              <img src="/img/modulo_logo.png" />
+              <h1>Software Developer</h1>
+              <p>November 2006 - September 2011</p>
+            </div>
+            <p><span>Modulo Solutions for GRC</span></p>
+            <p>
+              Started my career on Modulo Security as a intern developing and
+              maintaining the softwares used internally.
+            </p>
+            <p>
+              On that period I had the opportunity to work with several
+              programming languages (JSP, Vb.Net, classic ASP, PHP and C#) and
+              several databases (MySql, SQL Server and Oracle).
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="resume-section" id="education">
+        <h1>Education</h1>
+        <ul>
+          <li>
+            <div class="exp-item-header">
+              <img src="/img/estacio_logo.png" />
+              <h1>Bachelor of System Analysis</h1>
+              <p>2004 - 2008</p>
+            </div>
+            <p><span>Estácio de Sá University</span></p>
+            <p>
+              Estácio de Sá University is a private university in Rio de
+              Janeiro, Brazil.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="resume-section" id="certifications">
+        <h1>Certifications</h1>
+        <ul>
+          <li>
+            <div class="exp-item-header">
+              <img src="/img/coursera-logo.svg" />
+              <h1>
+                Divide and Conquer, Sorting and Searching, and Randomized
+                Algorithms
+              </h1>
+              <p>May 2017</p>
+            </div>
+            <p><span>Coursera</span></p>
+            <p><span>Credential ID G2QV6XU7SHLC</span></p>
+            <a
+              href="https://www.coursera.org/account/accomplishments/verify/G2QV6XU7SHLC"
+              >See Credential</a
+            >
+          </li>
+          <li>
+            <div class="exp-item-header">
+              <img src="/img/coursera-logo.svg" />
+              <h1>Machine Learning</h1>
+              <p>April 2017</p>
+            </div>
+            <p><span>Cousera</span></p>
+            <p><span>Credential ID TG986V9F6STC</span></p>
+            <a
+              href="https://www.coursera.org/account/accomplishments/verify/TG986V9F6STC"
+              >See Credential</a
+            >
+          </li>
+        </ul>
+      </section>
     </div>
-</body>
-<script>
+  </body>
+  <script>
     var buttons = document.querySelectorAll("ul.sidenav>li>a");
-    [...buttons].map(x=> x.addEventListener('click', 
-        (e) => {
-            [...e.toElement.parentElement.parentElement.querySelectorAll('a')].map(c=> c.classList.remove('active'));
-            e.toElement.classList.add('active');
-        }));
-</script>
+    [...buttons].map((x) =>
+      x.addEventListener("click", (e) => {
+        [
+          ...e.toElement.parentElement.parentElement.querySelectorAll("a"),
+        ].map((c) => c.classList.remove("active"));
+        e.toElement.classList.add("active");
+      })
+    );
+  </script>
 </html>
